@@ -13,9 +13,8 @@ def main():
     print("Perimeter:",perm)
     print("Area:",area)
 
-    d = 5**2 + w**2
-    d2= d/.5
-    print("Diagonal:",d2)
+    d = (5**2 + w**2)
+    print("Diagonal:",d)
 
 if __name__ == "__main__":
     main()
