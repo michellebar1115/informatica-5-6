@@ -4,7 +4,9 @@ def main():
 
     rating = float(input("What do you rate Michy's Pastaria from 0-5? Use decimals. : "))
 
-    if rating > 4.5:
+    if rating > 5:
+        print("Choose a number between 0-5")
+    elif rating > 4.5:
         print("Perfection")
     elif rating > 4:
         print("Excellent")
