@@ -13,32 +13,33 @@ def main():
     elif atmosphere == "Troposphere":
         print("Your altitude level will be between 0 to 12 km")
     else:
-        print("Invalid answer. Try again.")
+        print("Invalid answer.")
+
 
     starting = float(input("Enter exact altitud").strip())
     starting *= 1000
 
     if atmosphere == "Exosphere":
         starting /= 2000
-        eq = starting + ((700000-85000)/500) + ((85000-50000)/200) + ((50000-12000)/75) + (12000/20)
+        eq = round(starting + ((700000-85000)/500) + ((85000-50000)/200) + ((50000-12000)/75) + (12000/20),1)
         print("Total descent time:",eq)
     elif atmosphere == "Thermosphere":
         starting /= 500
-        eq = starting ((85000-50000)/200) + ((50000-12000)/75) + (12000/20)
+        eq = round(starting ((85000-50000)/200) + ((50000-12000)/75) + (12000/20),1)
         print("Total descent time:",eq)
     elif atmosphere == "Mesosphere":
         starting /= 200
-        eq = starting + ((50000-12000)/75) + (12000/20)
+        eq = round(starting + ((50000-12000)/75) + (12000/20),1)
         print("Total descent time:",eq)
     elif atmosphere == "Stratosphere":
         starting /= 75
-        eq = starting + (12000/20)
+        eq = round(starting + (12000/20),1)
         print("Total descent time:",eq)
     elif atmosphere == "Troposphere":
-        starting /= 20
+        starting /= round(20,1)
         print("Total descent time:",starting)
     else:
-        print("None valid number. Try again.")
+        print("Non-valid number. Try again.")
 
 if __name__ == "__main__":
     main()
