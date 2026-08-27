@@ -15,11 +15,30 @@ def main():
     else:
         print("Invalid answer. Try again.")
 
-    starting = int(input("Enter exact altitud"))
+    starting = float(input("Enter exact altitud").strip())
     starting *= 1000
-    starting /= 
 
-    print("Total descent time:", starting)
+    if atmosphere == "Exosphere":
+        starting /= 2000
+        eq = starting + ((700000-85000)/500) + ((85000-50000)/200) + ((50000-12000)/75) + (12000/20)
+        print("Total descent time:",eq)
+    elif atmosphere == "Thermosphere":
+        starting /= 500
+        eq = starting ((85000-50000)/200) + ((50000-12000)/75) + (12000/20)
+        print("Total descent time:",eq)
+    elif atmosphere == "Mesosphere":
+        starting /= 200
+        eq = starting + ((50000-12000)/75) + (12000/20)
+        print("Total descent time:",eq)
+    elif atmosphere == "Stratosphere":
+        starting /= 75
+        eq = starting + (12000/20)
+        print("Total descent time:",eq)
+    elif atmosphere == "Troposphere":
+        starting /= 20
+        print("Total descent time:",starting)
+    else:
+        print("None valid number. Try again.")
 
 if __name__ == "__main__":
     main()
