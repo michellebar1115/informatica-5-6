@@ -16,7 +16,7 @@ def main():
         print("Invalid answer.")
 
 
-    starting = float(input("Enter exact altitud").strip())
+    starting = float(input("Enter exact altitud: ").strip())
     starting *= 1000
 
     if atmosphere == "Exosphere":
