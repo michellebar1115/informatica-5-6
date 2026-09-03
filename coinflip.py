@@ -2,16 +2,22 @@ import random
 
 def main():
 
-    coin = random ["heads","tails"]
+    coin = ["heads","tails"]
     attempts = 3
 
-    guess = input("heads or tails?").strip()
+    while attempts > 0:
+        flip = random.choice(coin)
+        guess = input("Heads or Tails? ").strip().lower()
 
+        print("The coin landed on", flip)
 
-    if coin == guess:
-        print("Winner!")
-    else:
-        print("Loser!")
+        if guess == flip:
+            print("Winner!")
+            break
+        else:
+            print("Loser!")
+            attempts -= 1
+            print("Attempts left:", attempts)
 
 
 if __name__ == "__main__":
