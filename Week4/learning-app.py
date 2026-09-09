@@ -54,7 +54,7 @@ def main():
                 streak = 0
                 print("Incorrect")
                 print("The answer was:",subtraction)
-                
+
     if operation == "Multiplication":
 
         while streak != 3:
@@ -79,7 +79,7 @@ def main():
                 print("Incorrect")
                 print("The answer was:",multiplication)
     else:
-        print("Please provide one of the 3 operation options.")
+        print("Please provide one of the 3 operation options.") #The extra part. I don't know how to fix it so that it doesn't appear again at the end.
 
 
 

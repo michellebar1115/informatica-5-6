@@ -8,7 +8,7 @@ def main():
         answer = input("Would you like to sleep one more minute? ").title().strip()
 
         if answer == "Yes":
-            start = 6
+            start = 60
             while start > 0:
                 print(start)
                 time.sleep(1)
