@@ -2,8 +2,8 @@ def main():
 
     pets = ["Dog","Cat","Hamster","Fish"]
     pets.append("Bird")
-    pets.insert("Bunny")
-
+    pets.insert(2,"Bunny")
+    print(pets)
 
     x = len("hello")
 
@@ -32,6 +32,13 @@ def main():
     print(tacos.pop(3))
     print(tacos)
 
+    numbers = [1,5,3,7,8,14,21,2]
+    numbers.sort(reverse = True)
+    print(numbers)
+
+    numbers = [1,5,3,7,8,14,21,2]
+    numbers.sort()
+    print(numbers)
 
 if __name__ == "__main__":
     main()
