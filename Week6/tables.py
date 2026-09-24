@@ -2,6 +2,7 @@ def main():
 
     numlist = [1,2,3,4,5,6,7,8,9,10]
     exit = 1
+    
     while exit == 1:
         number = int(input("Enter a number (1-10): "))
         if number in numlist:

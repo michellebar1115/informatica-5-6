@@ -1,0 +1,6 @@
+1. Write a description for a while loop.
+A while look is a loop that will continue to repeat while the condition is followed.
+2. Write a description for a for loop.
+A loop is something that will go on and on forever.
+3. Compare a while loop to a for loop.
+The difference between a loop and a while loop is that the while loop will only continue going as as long as it follows the condition, while the normal loop will just go on forever unless stopped. Both are continous sequences.
