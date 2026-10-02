@@ -9,9 +9,11 @@ def main():
     while validation:
         try:
             number = int(input("Enter a number times table that you would like to be tested on: "))
-            validation = False
+            if number >= 1:
+                if number <= 10:
+                    validation = False
         except ValueError:
-            print("Invalid")
+                    print("Invalid")
 
     validation_2 = True
     while validation_2:
