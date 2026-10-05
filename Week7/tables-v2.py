@@ -27,7 +27,7 @@ def main():
     if number in numlist:
         print(f"You will be tested on the {number} times table")
 
-    for i in range(max_value+1):
+    for i in range(1, max_value+1):
         times = number*(i)
         validation_3 = True
         while validation_3:
