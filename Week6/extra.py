@@ -1,7 +1,7 @@
 def main():
 
     valid_nums = []
-    for 1 in range(1,11):
+    for i in range(1,11):
         valid_nums.append(str(i))
 
     while True:
