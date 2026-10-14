@@ -44,7 +44,7 @@ if __name__ == "__main__":
 
 #         user_input= (input("Enter a binary number: ").strip()
 
-#         binary_to_decimal(user_input)
+#      binary_to_decimal(user_input)
 
 # if __name__ == "__main__":
 #     main()
